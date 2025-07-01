@@ -1,4 +1,10 @@
 # ETL Assesment Task
+| Nama            | No Absen       | Kelompok |
+|------------------|----------------|----------|
+| Doni Wahyudi     | 9.043.DB2025   | 4        |      
+| Farhan Fadillah  | 9.008.DB2025   | 4        |
+| Almar Reza Maulana  | 9.043.DB2025  | 4      |
+
 
 ---
 ## Latar Belakang
@@ -27,9 +33,22 @@ Tugas ini terdiri dari tujuh soal utama dan satu soal bonus, yang masing-masing 
 4. Dictionary dan Pemfilteran Kondisional: Mengidentifikasi proyek dengan daya tarik investasi tinggi dan risiko konflik sosial rendah.
 
 5. Kemampuan analisis data tambahan.
+   
+---
+## Pendekatan dan Metodologi 
 
-6. Modul dan Penanganan Error: Membuat modul green_analysis.py untuk menghitung efisiensi CO2 dengan penanganan error ZeroDivisionError.
+Kami bekerja secara kolaboratif untuk menyelesaikan tugas ini, memanfaatkan keahlian masing-masing anggota tim dalam pemrograman Python, pengelolaan data dengan pandas, dan analisis machine learning dengan scikit-learn. Pendekatan kami meliputi :
 
-7. Penanganan Error dalam Loop: Menghitung rata-rata Energy_Output dengan penanganan KeyError untuk data yang hilang.
+1. Pembersihan dan Integrasi Data : Menggabungkan dataset berdasrkan Project_ID untuk analisis lintas domain.
 
-8. Bonus - Machine Learning dengan Decision Tree: Membangun model Decision Tree Classifier menggunakan scikit-learn untuk memprediksi daya tarik investasi berdasarkan fitur seperti GDP_Growth, CO2_Reduction, dan Investment_Cost.
+2. Pemrograman Terstruktur : Menggunakan struktur kode yang rapi disertai komentar yang jelas untuk memudahkan pemahaman.
+
+3. Penanganan Error : Menerapkan try-except untuk menangani potensi error seperti pembagian dengan nol atau data yang hilang.
+
+4. Analisis Machine Learning : Membangun model prediktif dengan Decision Tree Classifier untuk mendukung pengambilan keputusan investasi.
+
+7. Modul dan Penanganan Error: Membuat modul green_analysis.py untuk menghitung efisiensi CO2 dengan penanganan error ZeroDivisionError.
+
+8. Penanganan Error dalam Loop: Menghitung rata-rata Energy_Output dengan penanganan KeyError untuk data yang hilang.
+
+9. Bonus - Machine Learning dengan Decision Tree: Membangun model Decision Tree Classifier menggunakan scikit-learn untuk memprediksi daya tarik investasi berdasarkan fitur seperti GDP_Growth, CO2_Reduction, dan Investment_Cost.
