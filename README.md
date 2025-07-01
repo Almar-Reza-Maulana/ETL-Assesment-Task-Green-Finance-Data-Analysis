@@ -48,7 +48,6 @@ Berdasarkan dari tugas ini dan kebutuhan analisis data dalam konteks green finan
    
 ---
 ## 1.3 Rumusan Masalah
-1.3 Rumusan Masalah
 Berdasarkan identifikasi masalah di atas, perumusan masalah dari tugas asesmen ini adalah sebagai berikut:
 
 Bagaimana cara mengembangkan solusi berbasis Python untuk melakukan analisis data Keuangan Hijau di Indonesia, yang mencakup:
