@@ -1,9 +1,9 @@
 # ETL Assesment Task
+
 Repositori ini dibuat oleh Kelompok 4 untuk memenuhi soal ujian yang diberikan untuk menguasai pemrograman Python dan analisis data dalam konteks Green Finance serta proyek energi terbarukan di Indonesia tahun 2025. Dengan semangat inovasi dan kolaborasi, kami berupaya menghasilkan karya yang tidak hanya memenuhi standar, tetapi juga mencerminkan dedikasi kami untuk mendukung pembangunan berkelanjutan Indonesia melalui inisiatif Green Finance.
 
 ---
 ## 👥 Kelompok & Anggota
-
 
 | Nama            | No Absen       | Kelompok |
 |------------------|----------------|----------|
@@ -11,10 +11,11 @@ Repositori ini dibuat oleh Kelompok 4 untuk memenuhi soal ujian yang diberikan u
 | Farhan Fadillah  | 9.008.DB2025   | 4        |
 | Almar Reza Maulana  | 9.043.DB2025  | 4      |
 
-
 ---
-## Latar Belakang
-Tugas ini berfokus pada analisis data dari berbagai dataset yang mencakup aspek ekonomi, sosial, lingkungan, geospasial, dan keuangan terkait proyek energi terbarukan, khususnya PLTS (Pembangkit Listrik Tenaga Surya) dan PLTM (Pembangkit Listrik Tenaga Mikrohidro). Dataset yang digunakan meliputi:
+## BAB 1 : Pendahuluan
+
+## 1.1 Latar Belakang
+Sektor energi terbarukan di indonesia terus berkembang pesat sebagai bagian dari komitmen negara terhadap pembangunan berkelanjutan dan inisiatif keuangan hijau. Dalam konteks ini, analisis data yang akurat dan efisien menjadi krusial untuk mengevaluasi proyek-proyek, mengidentifikasi peluang investasi, serta memitigasi risiko sosial dan lingkungan. Tugas ini berfokus pada analisis data dari berbagai dataset yang mencakup aspek ekonomi, sosial, lingkungan, geospasial, dan keuangan terkait proyek energi terbarukan, khususnya PLTS (Pembangkit Listrik Tenaga Surya) dan PLTM (Pembangkit Listrik Tenaga Mikrohidro). Dataset yang digunakan meliputi:
 
 1. Economic Dataset: Berisi informasi seperti GDP_Growth dan Daya_Tarik_Investasi (High, Medium, Low) untuk menilai daya tarik ekonomi proyek.
 
@@ -27,34 +28,43 @@ Tugas ini berfokus pada analisis data dari berbagai dataset yang mencakup aspek 
 5. Financial Dataset: Berisi Investment_Cost (dalam miliar rupiah) untuk menilai skala keuangan proyek.
 
 ---
-## Tujuan dan Lingkup 
-Tugas ini terdiri dari tujuh soal utama dan satu soal bonus, yang masing-masing menguji kemampuan kami dalam berbagai aspek pemrograman Python dan analisis data:
+## 1.2 Identifikasi Masalah 
+Berdasarkan dari tugas ini dan kebutuhan analisis data dalam konteks green finance di indonesia, ada beberapa masalah utama yang di dapat yaitu :
 
-1. Conditional Statements (IF-Else) dan Operasi Aritmatika: Menghitung efisiensi pengurangan CO2 per juta rupiah untuk proyek PLTS.
+1. Efisiensi Pengurangan CO2 Proyek PLTS : Pemerintah perlu mengidentifikasi proyek PLTS yang mempunyai efisiensi pengurangan emisi CO2 tinggi per unit investasi, dihitung sebagai rasio pengurangan CO2 perjuta rupiah.
 
-2. For Loop dan Lists: Menghitung rata-rata pengurangan CO2 untuk proyek PLTM.
+2. Dampak Lingkungan Kolektif Proyek PLTM : Pemerintah memebutuhkan informasi mengenai rata-rata penguranagan CO2 dari proyek PLTM untuk menilai dampak lingkungan keseluruhannya.
 
-3. Input Pengguna dan Kontrol Loop: Menangani input Project_ID untuk analisis data sosial dengan loop yang berhenti saat input "DONE".
+3. Akses informasi Status Lahan dan Konflik Sosial : Diperlukan alat yang efisien untuk memverifikasi status lahan dan konflik sosial suatu proyek berdasarkan ``Project_ID`` yang diinput oleh pengguna. Sistem juga harus bisa menangani apakah ``Project_ID`` valid atau tidak valid.
 
-4. Dictionary dan Pemfilteran Kondisional: Mengidentifikasi proyek dengan daya tarik investasi tinggi dan risiko konflik sosial rendah.
+4. Identifikasi Proyek Minim Risiko : Pemerintah mencari proyek dengan daya tarik investasi tinggi dan tingkat konflik sosial yang rendah untuk meminimalisir adanya resiko.
 
-5. Kemampuan analisis data tambahan.
+5. Total Investasi Berdasarkan efisiensi lokasi : Diperlukan perhitungan total investasi untuk proyek-proyek yang memiliki efisiensi tinggi.
+
+6. Penanganan Kesalahan dalam perhitungan Efisiensi CO2 : Diperlukan modul yang dapat digunakan kembali untuk menghitung efisiensi pengurangan CO2 per investasi (masih belum paham nanti ditanya)
+
+7. Pengerjaan niali rata-rata dengan data yang tidak ada : Diperlukan perhitungan rata-rata output energi dari proyek yang terpilih, namun harus bisa mengelola data yang hilang di Project_ID
+
    
 ---
-## Pendekatan dan Metodologi 
+## 1.3 Rumusan Masalah
+1.3 Rumusan Masalah
+Berdasarkan identifikasi masalah di atas, perumusan masalah dari tugas asesmen ini adalah sebagai berikut:
 
-Kami bekerja secara kolaboratif untuk menyelesaikan tugas ini, memanfaatkan keahlian masing-masing anggota tim dalam pemrograman Python, pengelolaan data dengan pandas, dan analisis machine learning dengan scikit-learn. Pendekatan kami meliputi :
+Bagaimana cara mengembangkan solusi berbasis Python untuk melakukan analisis data Keuangan Hijau di Indonesia, yang mencakup:
 
-1. Pembersihan dan Integrasi Data : Menggabungkan dataset berdasrkan Project_ID untuk analisis lintas domain.
+1. Penggabungan dan filtering dataset untuk mengidentifikasi proyek PLTS dengan efisiensi pengurangan CO2 yang tinggi per unit investasi, serta mengklasifikasikannya sebagai "High" atau "Low"?
 
-2. Pemrograman Terstruktur : Menggunakan struktur kode yang rapi disertai komentar yang jelas untuk memudahkan pemahaman.
+2.  Menghitung rata-rata pengurangan CO2 untuk proyek PLTM menggunakan perulangan (for loop) dan list?
 
-3. Penanganan Error : Menerapkan try-except untuk menangani potensi error seperti pembagian dengan nol atau data yang hilang.
+3. Membuat program interaktif menggunakan perulangan (while loop) untuk memeriksa status lahan dan tingkat konflik sosial proyek berdasarkan input Project_ID dari pengguna, termasuk penanganan Project_ID yang tidak valid?
 
-4. Analisis Machine Learning : Membangun model prediktif dengan Decision Tree Classifier untuk mendukung pengambilan keputusan investasi.
+4. Memfilter dan menampilkan Project_ID dari proyek-proyek yang memiliki daya tarik investasi "High" dan tingkat konflik "Low" melalui penggabungan dataset dan operasi dictionary?
 
-7. Modul dan Penanganan Error: Membuat modul green_analysis.py untuk menghitung efisiensi CO2 dengan penanganan error ZeroDivisionError.
+5. Mendefinisikan dan menggunakan fungsi untuk menghitung total investasi proyek yang memiliki efisiensi lokasi "High" dari dataset gabungan?
 
-8. Penanganan Error dalam Loop: Menghitung rata-rata Energy_Output dengan penanganan KeyError untuk data yang hilang.
+6. Mengembangkan modul Python terpisah dengan fungsi yang menghitung efisiensi pengurangan CO2 per investasi, lengkap dengan penanganan ZeroDivisionError?
 
-9. Bonus - Machine Learning dengan Decision Tree: Membangun model Decision Tree Classifier menggunakan scikit-learn untuk memprediksi daya tarik investasi berdasarkan fitur seperti GDP_Growth, CO2_Reduction, dan Investment_Cost.
+7. Menerapkan penanganan kesalahan (try-except) dalam perulangan (for loop) untuk menghitung rata-rata output energi proyek, meskipun terdapat Project_ID yang hilang?
+
+8. Membangun dan mengevaluasi model Decision Tree Classifier menggunakan scikit-learn untuk memprediksi daya tarik investasi proyek baru berdasarkan fitur ekonomi, lingkungan, dan keuangan?
