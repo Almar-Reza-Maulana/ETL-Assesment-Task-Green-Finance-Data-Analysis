@@ -1,4 +1,7 @@
 # ETL Assesment Task
+## 👥 Kelompok & Anggota
+Repositori ini dibuat oleh Kelompok 4 sebagai bagian dari ........ , dengan tujuan ........
+
 | Nama            | No Absen       | Kelompok |
 |------------------|----------------|----------|
 | Doni Wahyudi     | 9.043.DB2025   | 4        |      
