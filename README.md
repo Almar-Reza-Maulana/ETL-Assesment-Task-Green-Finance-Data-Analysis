@@ -1,6 +1,6 @@
 # ETL Assesment Task
 ## 👥 Kelompok & Anggota
-Repositori ini dibuat oleh Kelompok 4 sebagai bagian dari ........ , dengan tujuan ........
+Repositori ini dibuat oleh Kelompok 4 sebagai bagian dari mengerjakan tugas yang diberikan , dengan tujuan ........
 
 | Nama            | No Absen       | Kelompok |
 |------------------|----------------|----------|
