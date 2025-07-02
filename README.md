@@ -23,7 +23,7 @@ Sektor energi terbarukan di indonesia terus berkembang pesat sebagai bagian dari
 
 3. Environmental Dataset: Berfokus pada CO2_Reduction (ton CO2e) dan Energy_Output (MWh) untuk mengukur dampak lingkungan.
 
-4. Geospatial Dataset: Menyediakan data Efisiensi_Lokasi (High, Medium, Low) berdasarkan faktor seperti iradiasi matahari atau kedekatan dengan jaringan listrik.
+4. Geospatial Dataset: Menyediakan data Efisiensi_Lokasi (High, Medium, Low) berdasarkan faktor seperti radiasi matahari atau kedekatan dengan jaringan listrik.
 
 5. Financial Dataset: Berisi Investment_Cost (dalam miliar rupiah) untuk menilai skala keuangan proyek.
 
@@ -106,7 +106,7 @@ Bab ini akan membahas implementasi solusi untuk setiap pertanyaandi soal, mulai 
 
 ---
 ## BAB III PENUTUP
-
+Sebagai bagian akhir dari repositori ini, maka dalam bab 3 ini akan disampaikan kesimpulan, dan saran mengenai hasil pengerjaan yang telah kami kerjakan. Kesimpulan, dan saran tersebut adalah sebagai berikut:
 ---
 ### 3.1 Kesimpulan
 
