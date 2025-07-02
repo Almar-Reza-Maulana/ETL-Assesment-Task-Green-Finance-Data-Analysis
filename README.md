@@ -12,7 +12,7 @@ Repositori ini dibuat oleh Kelompok 4 untuk memenuhi soal ujian yang diberikan u
 | Almar Reza Maulana  | 9.043.DB2025  | 4      |
 
 ---
-# BAB 1 PENDAHULUAN
+## BAB 1 PENDAHULUAN
 
 ### 1.1 Latar Belakang
 Sektor energi terbarukan di indonesia terus berkembang pesat sebagai bagian dari komitmen negara terhadap pembangunan berkelanjutan dan inisiatif keuangan hijau. Dalam konteks ini, analisis data yang akurat dan efisien menjadi krusial untuk mengevaluasi proyek-proyek, mengidentifikasi peluang investasi, serta memitigasi risiko sosial dan lingkungan. Tugas ini berfokus pada analisis data dari berbagai dataset yang mencakup aspek ekonomi, sosial, lingkungan, geospasial, dan keuangan terkait proyek energi terbarukan, khususnya PLTS (Pembangkit Listrik Tenaga Surya) dan PLTM (Pembangkit Listrik Tenaga Mikrohidro). Dataset yang digunakan meliputi:
@@ -47,7 +47,7 @@ Berdasarkan dari tugas ini dan kebutuhan analisis data dalam konteks green finan
 
    
 ---
-## 1.3 Rumusan Masalah
+### 1.3 Rumusan Masalah
 Berdasarkan identifikasi masalah di atas, perumusan masalah dari tugas asesmen ini adalah sebagai berikut:
 
 Bagaimana cara mengembangkan solusi berbasis Python untuk melakukan analisis data Keuangan Hijau di Indonesia, yang mencakup:
