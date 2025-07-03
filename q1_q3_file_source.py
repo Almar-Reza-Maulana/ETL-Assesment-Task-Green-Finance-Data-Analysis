@@ -1,3 +1,5 @@
+# Generate Q1 - Q3 for range generate data
+
 import pandas as pd
 
 def calculate_q1_q3_grouped(df, group_col, numeric_cols):
