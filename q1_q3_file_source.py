@@ -22,7 +22,7 @@ def calculate_q1_q3_grouped(df, group_col, numeric_cols):
 
 
 # --- Proses untuk Economic_Dataset.xlsx ---
-df_econ = pd.read_excel('C:\EnergiHijau2025\Assets\Economic_Dataset.xlsx')
+df_econ = pd.read_excel('Assets/Environmental_Dataset.xlsx')
 econ_numeric_cols = ['GDP_Growth', 'Interest_Rate', 'Bond_Yield']
 econ_numeric_cols = [col for col in econ_numeric_cols if col in df_econ.columns]
 econ_group_col = 'Daya_Tarik_Investasi'
@@ -32,7 +32,7 @@ econ_q1_q3.to_excel('out_q1_q3_economic.xlsx', index=False)
 print("Finished Q1 & Q3 calculation for Economic_Dataset")
 
 # --- Proses untuk Environmental_Dataset.xlsx ---
-df_env = pd.read_excel('C:\EnergiHijau2025\Assets\Environmental_Dataset.xlsx')
+df_env = pd.read_excel('Assets\Environmental_Dataset.xlsx')
 env_numeric_cols = ['CO2_Reduction', 'Energy_Output', 'Environmental_Risk_Index']
 env_numeric_cols = [col for col in env_numeric_cols if col in df_env.columns]
 env_group_col = 'Peringkat_Dampak'
@@ -42,7 +42,7 @@ env_q1_q3.to_excel('out_q1_q3_environmental.xlsx', index=False)
 print("Finished Q1 & Q3 calculation for Environmental_Dataset")
 
 # --- Proses untuk Financial_Dataset.xlsx ---
-df_fin = pd.read_excel('C:\EnergiHijau2025\Assets\Financial_Dataset.xlsx')
+df_fin = pd.read_excel('Assets\Financial_Dataset.xlsx')
 fin_numeric_cols = ['Investment_Cost', 'Revenue_Stream', 'Debt_Ratio', 'Payment_Delay']
 fin_numeric_cols = [col for col in fin_numeric_cols if col in df_fin.columns]
 fin_group_col = 'Status_Rank'
