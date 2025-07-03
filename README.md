@@ -7,9 +7,9 @@ Repositori ini dibuat oleh Kelompok 4 untuk memenuhi soal ujian yang diberikan u
 
 | Nama            | No Absen       | Kelompok |
 |------------------|----------------|----------|
-| Doni Wahyudi     | 9.043.DB2025   | 4        |      
-| Farhan Fadillah  | 9.008.DB2025   | 4        |
-| Almar Reza Maulana  | 9.050.DB2025  | 4      |
+| Doni Wahyudi     | 9.043.DB2025   | 5        |      
+| Farhan Fadillah  | 9.008.DB2025   | 5        |
+| Almar Reza Maulana  | 9.050.DB2025  | 5      |
 
 ---
 ## BAB 1 PENDAHULUAN
