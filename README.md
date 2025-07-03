@@ -76,15 +76,15 @@ Bab ini akan membahas implementasi solusi untuk setiap pertanyaan di soal, mulai
 ### Deskripsi
 Tugas ini berfokus pada analisis data dari berbagai dataset yang mencakup aspek ekonomi, sosial, lingkungan, geospasial, dan keuangan terkait proyek energi terbarukan, khususnya PLTS (Pembangkit Listrik Tenaga Surya) dan PLTM (Pembangkit Listrik Tenaga Mikrohidro). Dataset yang digunakan meliputi:
 
-1. Economic Dataset: Berisi informasi seperti GDP_Growth dan Daya_Tarik_Investasi (High, Medium, Low) untuk menilai daya tarik ekonomi proyek.
+1. <strong>Economic Dataset:</strong> Berisi informasi seperti GDP_Growth dan Daya_Tarik_Investasi (High, Medium, Low) untuk menilai daya tarik ekonomi proyek.
 
-2. Social Dataset: Mencakup Land_Status (Adat, Negara, Swasta) dan Tingkat_Konflik (High, Medium, Low) untuk mengevaluasi risiko sosial.
+2. <strong>Social Dataset:</strong> Mencakup Land_Status (Adat, Negara, Swasta) dan Tingkat_Konflik (High, Medium, Low) untuk mengevaluasi risiko sosial.
 
-3. Environmental Dataset: Berfokus pada CO2_Reduction (ton CO2e) dan Energy_Output (MWh) untuk mengukur dampak lingkungan.
+3. <strong>Environmental Dataset:</strong> Berfokus pada CO2_Reduction (ton CO2e) dan Energy_Output (MWh) untuk mengukur dampak lingkungan.
 
-4. Geospatial Dataset: Menyediakan data Efisiensi_Lokasi (High, Medium, Low) berdasarkan faktor seperti iradiasi matahari atau kedekatan dengan jaringan listrik.
+4. <strong>Geospatial Dataset:</strong> Menyediakan data Efisiensi_Lokasi (High, Medium, Low) berdasarkan faktor seperti iradiasi matahari atau kedekatan dengan jaringan listrik.
 
-5. Financial Dataset: Berisi Investment_Cost (dalam miliar rupiah) untuk menilai skala keuangan proyek.
+5. <strong>Financial Dataset:</strong> Berisi Investment_Cost (dalam miliar rupiah) untuk menilai skala keuangan proyek.
 
 ---
 
@@ -188,6 +188,7 @@ Ada perbedaan dengan contoh output yang diberikan, dimana pada contoh output rat
 ✔️ Saran
 - Melalui program ini, pemerintah dapat mengevaluasi apakah proyek energi hijau yang sedang dilakukan layak untuk dikembangkan dengan mempertimbangkan rasio efisiensi pengurangan CO2 terhadap nilai investasi.
 - Pemerintah juga dapat menggunakan hasil program yang didapat untuk menetapkan ambang batas rasio efisiensi CO2 terhadap biaya investasi nya sebagai indikator dalam menyeleksi proyek energi terbarukan yang akan dilakukan
+---
 
 ### Question 2: For Loop and Lists
 
@@ -259,6 +260,7 @@ Average CO2 Reduction for PLTM Projects: 34600 tons CO2e
 
 ✔️ Saran
 - Melalui program ini, pemerintah dapat menggunakan nilai rerata pengurangan CO2 pada proyek PLTM sebagai acuan untuk menilai efektivitas proyek PLTM yang akan atau sedang dilakukan
+---
 
 ### Question 3: While Loop and User Input
 
@@ -346,6 +348,7 @@ Enter Project_ID (or 'DONE' to finish): DONE
 - Melalui program ini, pemerintah dapat membuat pemetaan risiko sosial proyek berdasarkan status lahan dan tingkat konflik sosial pada daerah proyek masing-masing
 - Untuk proyek yang berisiko rendah dapat diprioritaskan agar pengerjaan proyek bisa cepat selesai dan memberikan kontribusi terhadap capaian bauran Energi Baru dan Terbarukan (EBT)
 - Untuk proyek yang berisiko tinggi, perlu dilakukan pendampingan atau mediasi agak dapat menghindari risiko terjadi nya konflik yang dapat menghambat berjalannya proyek
+---
 
 ### Question 4: Dictionary and Conditional Filtering
 
@@ -423,6 +426,7 @@ Dari program yang dibuat, didapat hasil berupa proyek yang mempunyai daya tarik 
 
 ✔️ Saran
 - Melalui program ini, pemerintah dapat menentukan prioritas untuk direalisasikan dan dipresentasikan ke investor karena mempunyai daya tarik investasi yang tinggi dan tingkat konflik yang rendah
+---
 
 ### Question 5: Functions and Arithmetic
 
@@ -504,6 +508,7 @@ Dari filtering proyek yang mempunyai efisiensi lokasi tinggi, didapat nilai tota
 
 ✔️ Saran  
 - Melalui program ini, pemerintah dapat mengetahui dana yang telah dikeluarkan untuk proyek dengan efisiensi lokasi tinggi apakah sudah sudah sesuai serapan anggaran nya atau bahkan melebihi alokasi yang telah ditetapkan
+---
 
 ### Question 6: Modules and Error Handling
 
@@ -568,6 +573,7 @@ PLTM-PAPU-001: 0.4
 ✔️ Saran  
 - Melalui program ini, pemerintah dapat mengukur efektivitas dari biaya investasi yang dikeluarkan dibandingkan dengan dampak lingkungan yang diberikan
 - Dengan membuat modul tersendiri juga dapat memudahkan proses pembuatan program-program lainnya yang akan diintegrasikan
+---
 
 
 ### Question 7: Error Handling in Loops
@@ -597,7 +603,7 @@ This question tests error handling within loops. Use a try-except block to handl
 ```
 import pandas as pd 
 
-df = pd.read_excel('Assets/Environmental_Dataset.xlsx')
+df = pd.read_csv('Assets/Environmental_Dataset.csv')
 ```
 
 ✔️ Preview Data
@@ -612,43 +618,92 @@ df = pd.read_excel('Assets/Environmental_Dataset.xlsx')
 - menampilkan rata-rata Energy_Output
 
 ```
-Project_ID_List = ['PLTS-NTT-O1','PLTM-SUMUT-001','PLTS-JATIM-001','PLTM-PAPU-001']
+env_dict = dict(zip(df['Project_ID'], df['Energy_Output']))
 
-Energy_Output_Values = []
-for index, row in df.iterrows() :
+project_ids = ['PLTS-NTT-O01', 'PLTM-SUMUT-001', 'PLTS-JATIM-001', 'PLTM-KALB-001','PLTS-SULS-001', 'PLTM-PAPU-001', 'PLTS-NTB-001', 'PLTM-ACHD-001','PLTS-JABW-001', 'PLTM-SULU-001']
+
+energy_output_values = []
+for project_id in project_ids:
     try:
-        Energy_Output = row['Energy_Output']
-        Project_ID = row['Project_ID']
-        if Project_ID in Project_ID_List :
-            Energy_Output_Values.append(Energy_Output)
+        energy_output = env_dict[project_id]
+        # ngevalidasi nilai Energy_Output 
+        if pd.notna('energy_output') and energy_output >= 0:
+            energy_output_values.append(energy_output)
+            print(f"Processed {project_id}: {energy_output} kWh")
+        else:
+            print(f"Project {project_id} data Energy_Output hilang")
     except KeyError:
-        print(f'Project_ID:{Project_ID} missing')
+        print(f"Project {project_id} tidak ditemukan")
 
-if len(Project_ID)> 0 :
-    Energy_Output = sum(Energy_Output_Values)
-    count_of_projects = len(Energy_Output_Values)
-    average = Energy_Output / count_of_projects
-else :
-    average = 0
-
-print (f'Average Energy Output :{int(average)} kwh')
+if len(energy_output_values) > 0:
+    total_energy = sum(energy_output_values)
+    count_of_projects = len(energy_output_values)
+    average_energy = total_energy / count_of_projects
+    print(f"Average Energy Output: {int(average_energy)} kWh")
+else:
+    print("No valid projects found.")
 ```
 
 ✔️ Hasil  
 - Dari project yang kita tentukan dalam project list, kita dapat menghitung rata-rata Energy Output yang dihasilkan dari project terpilih
 - output program :  
-Average Energy Output :18333 kwh
+Processed PLTS-NTT-O01: 25000.0 kWh  
+Processed PLTM-SUMUT-001: 10000.0 kWh  
+Processed PLTS-JATIM-001: 30000.0 kWh  
+Processed PLTM-KALB-001: 12000.0 kWh  
+Processed PLTS-SULS-001: 20000.0 kWh  
+Processed PLTM-PAPU-001: 15000.0 kWh  
+Processed PLTS-NTB-001: 28000.0 kWh  
+Processed PLTM-ACHD-001: 11000.0 kWh  
+Processed PLTS-JABW-001: 32000.0 kWh  
+Project PLTM-SULU-001 tidak ditemukan  
+Average Energy Output: 20333 kWh  
 
 ✔️ Saran  
 - Melalui program ini, pemerintah dapat mengetahui rata-rata energi output dari proyek-proyek yang diinginkan
-- Pemerintah juga dapat menggunakan program ini sebagai acuan untuk pembanding energi yang dihasilkan pada proyek atau tipe tertentu
+- Pemerintah juga dapat menggunakan program ini sebagai acuan untuk pembanding energi yang dihasilkan pada proyek atau tipe (PLTS, PLTM, dll) tertentu
+
+### Bonus Question: Machine Learning/AI with Decision Tree
+
+<strong>Description</strong>: The government aims to predict investment attractiveness ("High", "Medium", "Low") for new projects based on features like GDP_Growth, CO2_Reduction, and Investment_Cost.
+
+<strong>Task:</strong>
+<ul>
+    <li> Merge Economic_Dataset.xlsx, Environmental_Dataset.xlsx, and Financial_Dataset.xlsx. 
+    <li> Use scikit-learn to build a Decision Tree Classifier with Daya_Tarik_Investasi as the target.
+    <li> Train the model, evaluate its accuracy, and predict the attractiveness of a new project (e.g., GDP_Growth=5.0, CO2_Reduction=70000, Investment_Cost=150).
+</ul>
+
+<strong>Concepts and Methods:</strong>  
+A Decision Tree Classifier splits data into branches based on feature values to classify outcomes. The process involves:
+<ul>
+    <li> <strong>Data Preparation:</strong> Merge datasets and select features (GDP_Growth, CO2_Reduction, Investment_Cost) and target (Daya_Tarik_Investasi).
+    <li> <strong>Splitting:</strong> Use train_test_split to divide data into training (80%) and testing (20%) sets.
+    <li> <strong>Training:</strong> Fit the Decision Tree model using the training data.
+    <li> <strong>Evaluation:</strong> Compute accuracy on the test set using accuracy_score.
+    <li> <strong>Prediction:</strong>  Predict the class for new data.
+</ul>  
+<strong>Reference:</strong> Scikit-learn Decision Trees (https://scikit-learn.org/stable/modules/tree.html)
+
+<strong>Example Output:</strong>  
+Model Accuracy: 0.85  
+Prediction for new project: High  
+
+<strong>Additional Explanation:</strong>  
+This question introduces Machine Learning. Use scikit-learn to implement a Decision Tree Classifier, preprocess data by merging datasets, and evaluate model performance. Ensure proper data splitting and feature selection for accurate predictions.
 
 ---
-## BAB III PENUTUP
+
+<strong>Jawaban</strong>  
+Jawaban dan penjelasan bonus question ada di halaman berikut:  
+[bonus question machine learning](bonus_question_machine_learning.ipynb)
+
+---
+<!-- ## BAB III PENUTUP
 Sebagai bagian akhir dari repositori ini, maka dalam bab 3 ini akan disampaikan kesimpulan, dan saran mengenai hasil pengerjaan yang telah kami kerjakan. Kesimpulan, dan saran tersebut adalah sebagai berikut:
 
 ---
 ### 3.1 Kesimpulan
 
 ---
-### 3.2 Saran 
+### 3.2 Saran  -->
