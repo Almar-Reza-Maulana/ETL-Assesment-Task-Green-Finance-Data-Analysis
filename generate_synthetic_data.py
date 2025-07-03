@@ -1,3 +1,6 @@
+## GENERATE SYNTHETIC DATA 100 ROWS BASED ON Q1 and Q3 
+
+
 import pandas as pd
 import numpy as np
 import random
@@ -37,9 +40,9 @@ def generate_project_id(existing_ids):
     return new_ids
 
 # Baca dataset
-economic_df = pd.read_excel("C:\EnergiHijau2025\Assets\Economic_Dataset.xlsx")
-environmental_df = pd.read_excel("C:\EnergiHijau2025\Assets\Environmental_Dataset.xlsx")
-financial_df = pd.read_excel("C:\EnergiHijau2025\Assets\Financial_Dataset.xlsx")
+economic_df = pd.read_excel("Assets\Economic_Dataset.xlsx")
+environmental_df = pd.read_excel("Assets\Environmental_Dataset.xlsx")
+financial_df = pd.read_excel("Assets\Financial_Dataset.xlsx")
 
 # Ambil existing Project_ID yang ada di ketiga dataset (ambil yang common ID agar konsisten)
 existing_ids = list(set(economic_df['Project_ID']).intersection(
