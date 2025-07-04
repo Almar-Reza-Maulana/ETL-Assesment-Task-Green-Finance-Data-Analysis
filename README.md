@@ -73,7 +73,7 @@ Bagaimana cara mengembangkan solusi berbasis Python untuk melakukan analisis dat
 Bab ini akan membahas implementasi solusi untuk setiap pertanyaan di soal, mulai dari konsep dasar Python hingga aplikasi Machine Learning. Setiap sub-bab akan menjelaskan pendekatan, kode, dan contoh output yang diharapkan.
 
 ---
-### Deskripsi
+### 2.1 Deskripsi
 Tugas ini berfokus pada analisis data dari berbagai dataset yang mencakup aspek ekonomi, sosial, lingkungan, geospasial, dan keuangan terkait proyek energi terbarukan, khususnya PLTS (Pembangkit Listrik Tenaga Surya) dan PLTM (Pembangkit Listrik Tenaga Mikrohidro). Dataset yang digunakan meliputi:
 
 1. <strong>Economic Dataset:</strong> Berisi informasi seperti GDP_Growth dan Daya_Tarik_Investasi (High, Medium, Low) untuk menilai daya tarik ekonomi proyek.
@@ -88,7 +88,7 @@ Tugas ini berfokus pada analisis data dari berbagai dataset yang mencakup aspek 
 
 ---
 
-### Tujuan dan Lingkup 
+### 2.2 Tujuan dan Lingkup 
 Tugas ini terdiri dari tujuh soal utama dan satu soal bonus, yang masing-masing menguji kemampuan kami dalam berbagai aspek pemrograman Python dan analisis data:
 
 1. Conditional Statements (IF-Else) dan Operasi Aritmatika: Menghitung efisiensi pengurangan CO2 per juta rupiah untuk proyek PLTS.
@@ -108,8 +108,10 @@ Tugas ini terdiri dari tujuh soal utama dan satu soal bonus, yang masing-masing 
 8. Bonus - Machine Learning dengan Decision Tree: Membangun model Decision Tree Classifier menggunakan scikit-learn untuk memprediksi daya tarik investasi berdasarkan fitur seperti GDP_Growth, CO2_Reduction, dan Investment_Cost.
 
 ---
+### 2.3 Hasil dan Pembahasan 
 
-### Question 1: Conditional Statements (If-Else) and Arithmetic Operations
+---
+### 2.3.1 Question 1: Conditional Statements (If-Else) and Arithmetic Operations
 
 <strong>Description</strong>: The government seeks to identify PLTS projects with high CO2 reduction efficiency per unit of investment, calculated as CO2 reduction per million rupiah.
 
@@ -190,7 +192,7 @@ Ada perbedaan dengan contoh output yang diberikan, dimana pada contoh output rat
 - Pemerintah juga dapat menggunakan hasil program yang didapat untuk menetapkan ambang batas rasio efisiensi CO2 terhadap biaya investasi nya sebagai indikator dalam menyeleksi proyek energi terbarukan yang akan dilakukan
 ---
 
-### Question 2: For Loop and Lists
+### 2.3.2 Question 2: For Loop and Lists
 
 <strong>Description</strong>: The government needs the average CO2 reduction across PLTM projects to assess their collective environmental impact.
 
@@ -262,7 +264,7 @@ Average CO2 Reduction for PLTM Projects: 34600 tons CO2e
 - Melalui program ini, pemerintah dapat menggunakan nilai rerata pengurangan CO2 pada proyek PLTM sebagai acuan untuk menilai efektivitas proyek PLTM yang akan atau sedang dilakukan
 ---
 
-### Question 3: While Loop and User Input
+### 2.3.3 Question 3: While Loop and User Input
 
 <strong>Description</strong>: The government requires a tool to check land status and social conflict levels by entering Project_IDs.
 
@@ -350,7 +352,7 @@ Enter Project_ID (or 'DONE' to finish): DONE
 - Untuk proyek yang berisiko tinggi, perlu dilakukan pendampingan atau mediasi agak dapat menghindari risiko terjadi nya konflik yang dapat menghambat berjalannya proyek
 ---
 
-### Question 4: Dictionary and Conditional Filtering
+### 2.3.4 Question 4: Dictionary and Conditional Filtering
 
 <strong>Description</strong>: The government seeks projects with high investment attractiveness and low social conflict to minimise risks.
 
@@ -428,7 +430,7 @@ Dari program yang dibuat, didapat hasil berupa proyek yang mempunyai daya tarik 
 - Melalui program ini, pemerintah dapat menentukan prioritas untuk direalisasikan dan dipresentasikan ke investor karena mempunyai daya tarik investasi yang tinggi dan tingkat konflik yang rendah
 ---
 
-### Question 5: Functions and Arithmetic
+### 2.3.5 Question 5: Functions and Arithmetic
 
 <strong>Description</strong>: The government needs to calculate the total investment for projects with high location efficiency.
 
@@ -510,7 +512,7 @@ Dari filtering proyek yang mempunyai efisiensi lokasi tinggi, didapat nilai tota
 - Melalui program ini, pemerintah dapat mengetahui dana yang telah dikeluarkan untuk proyek dengan efisiensi lokasi tinggi apakah sudah sudah sesuai serapan anggaran nya atau bahkan melebihi alokasi yang telah ditetapkan
 ---
 
-### Question 6: Modules and Error Handling
+### 2.3.6 Question 6: Modules and Error Handling
 
 <strong>Description</strong>: The government requires a reusable tool to compute CO2 reduction efficiency with error handling.
 
@@ -576,7 +578,7 @@ PLTM-PAPU-001: 0.4
 ---
 
 
-### Question 7: Error Handling in Loops
+### 2.3.7 Question 7: Error Handling in Loops
 
 <strong>Description</strong>: The government needs to calculate the average energy output of selected projects, handling missing data.
 
@@ -663,7 +665,7 @@ Average Energy Output: 20333 kWh
 - Melalui program ini, pemerintah dapat mengetahui rata-rata energi output dari proyek-proyek yang diinginkan
 - Pemerintah juga dapat menggunakan program ini sebagai acuan untuk pembanding energi yang dihasilkan pada proyek atau tipe (PLTS, PLTM, dll) tertentu
 
-### Bonus Question: Machine Learning/AI with Decision Tree
+### 2.3.8 Bonus Question: Machine Learning/AI with Decision Tree
 
 <strong>Description</strong>: The government aims to predict investment attractiveness ("High", "Medium", "Low") for new projects based on features like GDP_Growth, CO2_Reduction, and Investment_Cost.
 
@@ -699,11 +701,32 @@ Jawaban dan penjelasan bonus question ada di halaman berikut:
 [bonus question machine learning](bonus_question_machine_learning.ipynb)
 
 ---
-<!-- ## BAB III PENUTUP
-Sebagai bagian akhir dari repositori ini, maka dalam bab 3 ini akan disampaikan kesimpulan, dan saran mengenai hasil pengerjaan yang telah kami kerjakan. Kesimpulan, dan saran tersebut adalah sebagai berikut:
+ ## BAB III PENUTUP
+Sebagai bagian akhir dari repositori ini, maka dalam bab 3 ini akan disampaikan kesimpulan mengenai hasil pengerjaan yang telah kami kerjakan. Kesimpulan tersebut adalah sebagai berikut:
 
 ---
 ### 3.1 Kesimpulan
+Berdasarkan pembahasan dari pengerjaan delapan soal dalam asesmen ini maka bisa ditarik kesimpulan :
 
----
-### 3.2 Saran  -->
+1. Conditional Statements (If-Else) and Arithmetic Operations: Kami menggabungkan data lingkungan dan finansial untuk menghitung dan mengklasifikasikan efisiensi pengurangan CO2 per investasi untuk proyek PLTS, memberikan alat ukur yang jelas bagi pemerintah.
+
+2. For Loop and Lists: Rata-rata pengurangan CO2 dari seluruh proyek PLTM berhasil dihitung menggunakan loops dan struktur data list, yang menyajikan gambaran umum dampak lingkungan dari jenis proyek ini.
+
+3. While Loop and User Input: Membuat code yang berbasis while loop untuk memverifikasi status lahan dan tingkat konflik sosial secara dinamis, lengkap dengan penanganan untuk Project_ID yang tidak valid.
+
+4. Dictionary and Conditional Filtering: Dengan menggabungkan data ekonomi dan sosial ke dalam struktur data dictionary, kami berhasil memfilter dan mengidentifikasi proyek-proyek yang paling ideal, yaitu yang memiliki daya tarik investasi "High" dan tingkat konflik "Low".
+
+5. Functions and Arithmetic: Kami membuat dan menerapkan sebuah fungsi untuk mengkalkulasi total investasi dari proyek-proyek yang memiliki efisiensi lokasi "High", menunjukkan kemampuan dalam agregasi data berdasarkan kriteria tertentu.
+
+6. Modules and Error Handling: Dengan membuat modul Python (green_analysis.py) yang dapat digunakan kembali untuk menghitung efisiensi CO2, dengan menyertakan penanganan ZeroDivisionError untuk memastikan program tidak terjadi kesalahan.
+
+7. Error Handling in Loops: Membuat program untuk tetap berfungsi meskipun ada data yang hilang telah ditunjukkan dengan mengimplementasikan error handling try-except dalam loop untuk menghitung rata-rata output energi.
+
+8. Machine Learning/AI with Decision Tree: Disini kami mencoba untuk membangun, melatih, dan mengevaluasi model Decision Tree Classifier untuk memprediksi daya tarik investasi proyek baru, yang menunjukkan pemahaman terhadap alur kerja machine learning dari persiapan data hingga prediksi.
+
+Terima kasih telah mengunjungi repositori ETL Assesment Green Finance Kelompok 5. Kami mendedikasikan proyek ini untuk memahami dan menganalisis data seputar Green Finance dan proyek energi terbarukan di Indonesia. Kami juga berharap hasil tugas project ini dapat memberikan wawasan dan menjadi referensi yang bermanfaat bagi siapa saja yang tertarik pada analisis data, keuangan berkelanjutan, dan transisi energi. Kami sangat terbuka untuk segala bentuk kontribusi, saran, atau masukan untuk pengembangan proyek ini di masa depan.
+
+Jangan ragu untuk melakukan fork, membuat issue, atau mengirimkan pull request.
+
+Mari bersama-sama mendukung pembangunan berkelanjutan di Indonesia melalui inovasi berbasis data! 💚
+
