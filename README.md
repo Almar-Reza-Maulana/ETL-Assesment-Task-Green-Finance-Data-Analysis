@@ -411,12 +411,13 @@ for index, row in df_merged.iterrows():
     project = row['Project_ID']
     daya_tarik = row['Daya_Tarik_Investasi']
     tingkat_konflik = row['Tingkat_Konflik']
-    project_dict[project] = {'Daya_Tarik_Investasi': daya_tarik, 'Tingkat_Konflik': tingkat_konflik}
+    project_dict[project] = (daya_tarik, tingkat_konflik)
 
 print('Projects with High Investment Attractiveness and Low Conflict:')
 for key, values in project_dict.items():
-    if values['Daya_Tarik_Investasi'][0:values['Daya_Tarik_Investasi'].index(':')] == 'High' and values['Tingkat_Konflik'][0:values['Tingkat_Konflik'].index(':')] == 'Low':
+    if values[0][0:values[0].index(':')] == 'High' and values[1][0:values[1].index(':')] == 'Low':
         print(key)
+
 ```
 
 ✔️ Hasil  
@@ -702,11 +703,36 @@ Jawaban dan penjelasan bonus question ada di halaman berikut:
 
 ---
  ## BAB III PENUTUP
-Sebagai bagian akhir dari repositori ini, maka dalam bab 3 ini akan disampaikan kesimpulan mengenai hasil pengerjaan yang telah kami kerjakan. Kesimpulan tersebut adalah sebagai berikut:
+Sebagai bagian akhir dari repositori ini, maka dalam bab 3 ini akan disampaikan Implikasi, Kesimpulan, Keterbatasan Penelitian dalam Project dan Saran mengenai hasil pengerjaan yang telah kami kerjakan sebagai berikut :
 
 ---
-### 3.1 Kesimpulan
-Berdasarkan pembahasan dari pengerjaan delapan soal dalam asesmen ini maka bisa ditarik kesimpulan :
+### 3.1 Implikasi
+
+Implikasi teoretis dari penelitian ini terletak pada kontribusinya terhadap pengembangan pendekatan analitik multidimensi dalam kerangka Sustainable Development Decision Support Systems (SD-DSS). Penggunaan data sintetis berbasis IQR (Q1–Q3) untuk menjaga distribusi statistik yang representatif, tanpa mengorbankan validitas model, juga menambah kekayaan metodologis dalam kajian data-driven policy design.
+
+Secara praktis, sistem yang dibangun menawarkan prototipe fungsional bagi pemerintah dan investor dalam:
+1. Menentukan prioritas proyek energi berdasarkan efisiensi investasi terhadap dampak lingkungan,
+2. Mengidentifikasi lokasi strategis dengan risiko sosial rendah,
+3. Melakukan simulasi alokasi anggaran berdasarkan parameter objektif, dan
+4. Menyusun kebijakan berbasis bukti (evidence-based policymaking) dalam sektor energi bersih.
+Selain itu, pendekatan modular melalui pemisahan fungsi dan penggunaan pengendalian error menjadikan sistem ini layak diintegrasikan dalam platform kebijakan nasional seperti Sistem Informasi Perencanaan EBT.
+
+---
+### 3.2 Keterbatasan Penelitian dalam Project
+
+Meskipun penelitian ini memberikan kontribusi yang signifikan, terdapat beberapa keterbatasan yang perlu dicatat:
+- Ukuran dan jenis data yang digunakan masih terbatas pada data sintetis perlu menambahkan lebih banyak data real case, sehingga generalisasi terhadap populasi proyek energi terbarukan nasional perlu diuji lebih lanjut.
+- Model pembelajaran mesin yang digunakan (Decision Tree) masih bersifat dasar dan belum diuji dengan model-model lanjutan atau teknik validasi silang (cross-validation) yang lebih kompleks.
+- Aspek sosial dan budaya lokal yang bersifat kualitatif, seperti resistensi masyarakat adat atau tingkat penerimaan komunitas, belum dimodelkan secara kuantitatif.
+- Sistem belum terintegrasi dengan dashboard visual interaktif untuk pengambilan keputusan secara real-time oleh pemangku kepentingan non-teknis.
+
+---
+### 3.3 Kesimpulan
+Project ini bertujuan untuk mengembangkan sistem berbasis Python yang dapat mendukung analisis data lintas sektoral dalam konteks Green Finance di Indonesia, dengan fokus pada proyek energi terbarukan, khususnya PLTS dan PLTM. Berdasarkan hasil pengembangan dan implementasi sistem, dapat disimpulkan bahwa seluruh tujuan penelitian telah tercapai secara fungsional dan analitis.
+
+Penggabungan lima domain data ekonomi, sosial, lingkungan, keuangan, dan geospasial, berhasil membentuk fondasi sistem informasi yang terotomatisasi, mulai dari klasifikasi efisiensi CO₂ terhadap investasi, penilaian risiko sosial melalui input Project_ID, hingga prediksi daya tarik investasi menggunakan algoritma Decision Tree Classifier. Model prediktif yang dikembangkan mencatat akurasi sebesar 85%, menunjukkan potensi signifikan dalam mendukung proses pengambilan keputusan berbasis data.
+
+Temuan ini memperkuat argumen bahwa pendekatan integratif berbasis data dan machine learning mampu meningkatkan efisiensi dan akurasi evaluasi proyek energi berkelanjutan dalam konteks kebijakan publik maupun investasi swasta. pembahasan dari pengerjaan delapan soal dalam asesmen ini maka bisa ditarik kesimpulan :
 
 1. Conditional Statements (If-Else) and Arithmetic Operations: Kami menggabungkan data lingkungan dan finansial untuk menghitung dan mengklasifikasikan efisiensi pengurangan CO2 per investasi untuk proyek PLTS, memberikan alat ukur yang jelas bagi pemerintah.
 
@@ -723,6 +749,16 @@ Berdasarkan pembahasan dari pengerjaan delapan soal dalam asesmen ini maka bisa 
 7. Error Handling in Loops: Membuat program untuk tetap berfungsi meskipun ada data yang hilang telah ditunjukkan dengan mengimplementasikan error handling try-except dalam loop untuk menghitung rata-rata output energi.
 
 8. Machine Learning/AI with Decision Tree: Disini kami mencoba untuk membangun, melatih, dan mengevaluasi model Decision Tree Classifier untuk memprediksi daya tarik investasi proyek baru, yang menunjukkan pemahaman terhadap alur kerja machine learning dari persiapan data hingga prediksi.
+
+---
+### 3.4 Saran
+
+Berdasarkan temuan dan keterbatasan yang telah diuraikan, berikut adalah beberapa rekomendasi untuk penelitian dan pengembangan sistem selanjutnya:
+1. Ekspansi Data Riil: Perlu dilakukan integrasi dengan data lapangan aktual dari kementerian/lembaga (misalnya ESDM, KLHK) untuk meningkatkan validitas ekternal model.
+2. Pengembangan Model Prediktif Lanjutan: Implementasi model ensemble seperti Random Forest, Gradient Boosting, atau Explainable AI (XAI) dapat memperkuat interpretabilitas dan akurasi sistem.
+3. Penguatan Integrasi UI/UX: Sistem perlu dikembangkan dalam bentuk aplikasi berbasis web (misalnya Streamlit atau Dash) agar dapat diakses oleh pengambil kebijakan tanpa latar belakang teknis.
+4. Pemodelan Risiko Sosial yang Lebih Kompleks: Diperlukan pendekatan kuantitatif terhadap aspek sosial berbasis indeks sosial, data spasial demografis, atau natural language processing dari berita/laporan lokal.
+5. Validasi dan Replikasi: Penelitian lanjutan perlu menguji replikasi model ini di wilayah geografis dan tipologi proyek berbeda, serta melakukan uji sensitivitas terhadap variasi parameter ekonomi dan lingkungan.
 
 Terima kasih telah mengunjungi repositori ETL Assesment Green Finance Kelompok 5. Kami mendedikasikan proyek ini untuk memahami dan menganalisis data seputar Green Finance dan proyek energi terbarukan di Indonesia. Kami juga berharap hasil tugas project ini dapat memberikan wawasan dan menjadi referensi yang bermanfaat bagi siapa saja yang tertarik pada analisis data, keuangan berkelanjutan, dan transisi energi. Kami sangat terbuka untuk segala bentuk kontribusi, saran, atau masukan untuk pengembangan proyek ini di masa depan.
 
