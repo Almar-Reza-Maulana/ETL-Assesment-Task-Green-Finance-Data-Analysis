@@ -1,4 +1,4 @@
-# ETL Assesment Task
+# 📝 ETL Assesment Task
 
 Repositori ini dibuat oleh Kelompok 5 untuk memenuhi soal ujian yang diberikan untuk menguasai pemrograman Python dan analisis data dalam konteks Green Finance serta proyek energi terbarukan di Indonesia tahun 2025. Dengan semangat inovasi dan kolaborasi, kami berupaya menghasilkan karya yang tidak hanya memenuhi standar, tetapi juga mencerminkan dedikasi kami untuk mendukung pembangunan berkelanjutan Indonesia melalui inisiatif Green Finance.
 
@@ -12,7 +12,7 @@ Repositori ini dibuat oleh Kelompok 5 untuk memenuhi soal ujian yang diberikan u
 | Almar Reza Maulana  | 9.050.DB2025  | 5      |
 
 ---
-## BAB 1 PENDAHULUAN
+## 📜 BAB 1 PENDAHULUAN
 
 ### 1.1 Latar Belakang
 Sektor energi terbarukan di indonesia terus berkembang pesat sebagai bagian dari komitmen negara terhadap pembangunan berkelanjutan dan inisiatif keuangan hijau. Dalam konteks ini, analisis data yang akurat dan efisien menjadi krusial untuk mengevaluasi proyek-proyek, mengidentifikasi peluang investasi, serta memitigasi risiko sosial dan lingkungan. Tugas ini berfokus pada analisis data dari berbagai dataset yang mencakup aspek ekonomi, sosial, lingkungan, geospasial, dan keuangan terkait proyek energi terbarukan, khususnya PLTS (Pembangkit Listrik Tenaga Surya) dan PLTM (Pembangkit Listrik Tenaga Mikrohidro). Dataset yang digunakan meliputi:
@@ -69,7 +69,7 @@ Bagaimana cara mengembangkan solusi berbasis Python untuk melakukan analisis dat
 8. Membangun dan mengevaluasi model Decision Tree Classifier menggunakan scikit-learn untuk memprediksi daya tarik investasi proyek baru berdasarkan fitur ekonomi, lingkungan, dan keuangan?
 
 ---
-## BAB II PEMBAHASAN
+## 🔄 BAB II PEMBAHASAN
 Bab ini akan membahas implementasi solusi untuk setiap pertanyaan di soal, mulai dari konsep dasar Python hingga aplikasi Machine Learning. Setiap sub-bab akan menjelaskan pendekatan, kode, dan contoh output yang diharapkan.
 
 ---
@@ -702,7 +702,7 @@ Jawaban dan penjelasan bonus question ada di halaman berikut:
 [bonus question machine learning](bonus_question_machine_learning.ipynb)
 
 ---
- ## BAB III PENUTUP
+ ## 🚩BAB III PENUTUP
 Sebagai bagian akhir dari repositori ini, maka dalam bab 3 ini akan disampaikan Implikasi, Kesimpulan, Keterbatasan Penelitian dalam Project dan Saran mengenai hasil pengerjaan yang telah kami kerjakan sebagai berikut :
 
 ---
