@@ -699,6 +699,41 @@ Jawaban dan penjelasan bonus question ada di halaman berikut:
 [bonus question machine learning](bonus_question_machine_learning.ipynb)
 
 ---
+
+## BAB III PENUTUP
+**3.1 Kesimpulan**
+Project ini bertujuan untuk mengembangkan sistem berbasis Python yang dapat mendukung analisis data lintas sektoral dalam konteks Green Finance di Indonesia, dengan fokus pada proyek energi terbarukan, khususnya PLTS dan PLTM. Berdasarkan hasil pengembangan dan implementasi sistem, dapat disimpulkan bahwa seluruh tujuan penelitian telah tercapai secara fungsional dan analitis.
+
+Penggabungan lima domain data—ekonomi, sosial, lingkungan, keuangan, dan geospasial—berhasil membentuk fondasi sistem informasi yang terotomatisasi, mulai dari klasifikasi efisiensi CO₂ terhadap investasi, penilaian risiko sosial melalui input Project_ID, hingga prediksi daya tarik investasi menggunakan algoritma Decision Tree Classifier. Model prediktif yang dikembangkan mencatat akurasi sebesar 85%, menunjukkan potensi signifikan dalam mendukung proses pengambilan keputusan berbasis data.
+
+Temuan ini memperkuat argumen bahwa pendekatan integratif berbasis data dan machine learning mampu meningkatkan efisiensi dan akurasi evaluasi proyek energi berkelanjutan dalam konteks kebijakan publik maupun investasi swasta.
+
+**3.2 Implikasi**
+Implikasi teoretis dari penelitian ini terletak pada kontribusinya terhadap pengembangan pendekatan analitik multidimensi dalam kerangka Sustainable Development Decision Support Systems (SD-DSS). Penggunaan data sintetis berbasis IQR (Q1–Q3) untuk menjaga distribusi statistik yang representatif, tanpa mengorbankan validitas model, juga menambah kekayaan metodologis dalam kajian data-driven policy design.
+
+Secara praktis, sistem yang dibangun menawarkan prototipe fungsional bagi pemerintah dan investor dalam:
+- Menentukan prioritas proyek energi berdasarkan efisiensi investasi terhadap dampak lingkungan,
+- Mengidentifikasi lokasi strategis dengan risiko sosial rendah,
+- Melakukan simulasi alokasi anggaran berdasarkan parameter objektif, dan
+- Menyusun kebijakan berbasis bukti (evidence-based policymaking) dalam sektor energi bersih.
+Selain itu, pendekatan modular melalui pemisahan fungsi dan penggunaan pengendalian error menjadikan sistem ini layak diintegrasikan dalam platform kebijakan nasional seperti Sistem Informasi Perencanaan EBT.
+
+**3.3 Keterbatasan Penelitian dalam Project**
+Meskipun penelitian ini memberikan kontribusi yang signifikan, terdapat beberapa keterbatasan yang perlu dicatat:
+- Ukuran dan jenis data yang digunakan masih terbatas pada data sintetis perlu menambahkan lebih banyak data real case, sehingga generalisasi terhadap populasi proyek energi terbarukan nasional perlu diuji lebih lanjut.
+- Model pembelajaran mesin yang digunakan (Decision Tree) masih bersifat dasar dan belum diuji dengan model-model lanjutan atau teknik validasi silang (cross-validation) yang lebih kompleks.
+- Aspek sosial dan budaya lokal yang bersifat kualitatif, seperti resistensi masyarakat adat atau tingkat penerimaan komunitas, belum dimodelkan secara kuantitatif.
+- Sistem belum terintegrasi dengan dashboard visual interaktif untuk pengambilan keputusan secara real-time oleh pemangku kepentingan non-teknis.
+
+**3.4 Saran**
+Berdasarkan temuan dan keterbatasan yang telah diuraikan, berikut adalah beberapa rekomendasi untuk penelitian dan pengembangan sistem selanjutnya:
+- Ekspansi Data Riil: Perlu dilakukan integrasi dengan data lapangan aktual dari kementerian/lembaga (misalnya ESDM, KLHK) untuk meningkatkan validitas ekternal model.
+- Pengembangan Model Prediktif Lanjutan: Implementasi model ensemble seperti Random Forest, Gradient Boosting, atau Explainable AI (XAI) dapat memperkuat interpretabilitas dan akurasi sistem.
+- Penguatan Integrasi UI/UX: Sistem perlu dikembangkan dalam bentuk aplikasi berbasis web (misalnya Streamlit atau Dash) agar dapat diakses oleh pengambil kebijakan tanpa latar belakang teknis.
+- Pemodelan Risiko Sosial yang Lebih Kompleks: Diperlukan pendekatan kuantitatif terhadap aspek sosial berbasis indeks sosial, data spasial demografis, atau natural language processing dari berita/laporan lokal.
+- Validasi dan Replikasi: Penelitian lanjutan perlu menguji replikasi model ini di wilayah geografis dan tipologi proyek berbeda, serta melakukan uji sensitivitas terhadap variasi parameter ekonomi dan lingkungan.
+
+
 <!-- ## BAB III PENUTUP
 Sebagai bagian akhir dari repositori ini, maka dalam bab 3 ini akan disampaikan kesimpulan, dan saran mengenai hasil pengerjaan yang telah kami kerjakan. Kesimpulan, dan saran tersebut adalah sebagai berikut:
 
