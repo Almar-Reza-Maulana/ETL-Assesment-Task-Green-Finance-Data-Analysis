@@ -1,6 +1,6 @@
 # ETL Assesment Task
 
-Repositori ini dibuat oleh Kelompok 4 untuk memenuhi soal ujian yang diberikan untuk menguasai pemrograman Python dan analisis data dalam konteks Green Finance serta proyek energi terbarukan di Indonesia tahun 2025. Dengan semangat inovasi dan kolaborasi, kami berupaya menghasilkan karya yang tidak hanya memenuhi standar, tetapi juga mencerminkan dedikasi kami untuk mendukung pembangunan berkelanjutan Indonesia melalui inisiatif Green Finance.
+Repositori ini dibuat oleh Kelompok 5 untuk memenuhi soal ujian yang diberikan untuk menguasai pemrograman Python dan analisis data dalam konteks Green Finance serta proyek energi terbarukan di Indonesia tahun 2025. Dengan semangat inovasi dan kolaborasi, kami berupaya menghasilkan karya yang tidak hanya memenuhi standar, tetapi juga mencerminkan dedikasi kami untuk mendukung pembangunan berkelanjutan Indonesia melalui inisiatif Green Finance.
 
 ---
 ### 👥 Kelompok & Anggota
@@ -705,7 +705,7 @@ Jawaban dan penjelasan bonus question ada di halaman berikut:
 
 Project ini bertujuan untuk mengembangkan sistem berbasis Python yang dapat mendukung analisis data lintas sektoral dalam konteks Green Finance di Indonesia, dengan fokus pada proyek energi terbarukan, khususnya PLTS dan PLTM. Berdasarkan hasil pengembangan dan implementasi sistem, dapat disimpulkan bahwa seluruh tujuan penelitian telah tercapai secara fungsional dan analitis.
 
-Penggabungan lima domain data—ekonomi, sosial, lingkungan, keuangan, dan geospasial—berhasil membentuk fondasi sistem informasi yang terotomatisasi, mulai dari klasifikasi efisiensi CO₂ terhadap investasi, penilaian risiko sosial melalui input Project_ID, hingga prediksi daya tarik investasi menggunakan algoritma Decision Tree Classifier. Model prediktif yang dikembangkan mencatat akurasi sebesar 85%, menunjukkan potensi signifikan dalam mendukung proses pengambilan keputusan berbasis data.
+Penggabungan lima domain data ekonomi, sosial, lingkungan, keuangan, dan geospasial, berhasil membentuk fondasi sistem informasi yang terotomatisasi, mulai dari klasifikasi efisiensi CO₂ terhadap investasi, penilaian risiko sosial melalui input Project_ID, hingga prediksi daya tarik investasi menggunakan algoritma Decision Tree Classifier. Model prediktif yang dikembangkan mencatat akurasi sebesar 85%, menunjukkan potensi signifikan dalam mendukung proses pengambilan keputusan berbasis data.
 
 Temuan ini memperkuat argumen bahwa pendekatan integratif berbasis data dan machine learning mampu meningkatkan efisiensi dan akurasi evaluasi proyek energi berkelanjutan dalam konteks kebijakan publik maupun investasi swasta.
 
